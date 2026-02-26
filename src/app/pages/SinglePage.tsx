@@ -1,7 +1,8 @@
 import { DixaLogo } from "../components/DixaLogo";
 import { AlertTriangle, CheckCircle2, TrendingUp } from "lucide-react";
-import imgVendor from "@/assets/img-vendor.png";
 import imgAiChat from "@/assets/img-ai-chat.png";
+import imgScalability from "@/assets/img-scalability.png";
+import imgHeroBg from "@/assets/img-hero-bg.png";
 
 export default function SinglePage() {
   return (
@@ -14,16 +15,22 @@ export default function SinglePage() {
       <div className="max-w-5xl mx-auto px-10 py-16 space-y-10">
 
         {/* Hero */}
-        <section className="pb-6">
-          <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
-            Guide for CS Leaders • 2026
+        <section
+          className="relative rounded-2xl overflow-hidden pb-16 pt-14 px-10"
+          style={{ backgroundImage: `url(${imgHeroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        >
+          <div className="absolute inset-0 bg-[#2a2a2a]/60" />
+          <div className="relative z-10">
+            <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
+              Guide for CS Leaders • 2026
+            </div>
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
+              CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
+            </h1>
+            <p className="text-lg text-white/60 max-w-2xl">
+              The defining question of 2026: How do you choose the right CX platform in the AI era?
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
-            CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
-          </h1>
-          <p className="text-lg text-white/60 max-w-2xl">
-            The defining question of 2026: How do you choose the right CX platform in the AI era?
-          </p>
         </section>
 
         {/* ── Section 1: AI Platform ── */}
@@ -54,7 +61,6 @@ export default function SinglePage() {
 
         {/* ── Section 2: Digital Sovereignty ── */}
         <section className="bg-[#1f1f1f] rounded-2xl overflow-hidden">
-          <img src={imgVendor} alt="Vendor Lock-in" className="w-full object-cover max-h-64" />
           <div className="p-8">
           <div className="flex items-start gap-4 mb-6">
             <span className="text-3xl">🔐</span>
@@ -201,7 +207,7 @@ export default function SinglePage() {
         </section>
 
         {/* ── Section 7: Scalability ── */}
-        <section className="bg-[#1f1f1f] rounded-2xl p-8">
+        <section className="bg-[#1f1f1f] rounded-2xl overflow-hidden">
           <div className="flex items-start gap-4 mb-6">
             <span className="text-3xl">📈</span>
             <div>
@@ -209,6 +215,7 @@ export default function SinglePage() {
               <p className="text-white/60">67% of support leaders say scalability and flexibility are their top priorities in 2026.</p>
             </div>
           </div>
+          <div className="p-8">
           <div className="grid sm:grid-cols-3 gap-4 mb-4">
             {[
               ["📊", "Platform uptime", ">99.99% with SOC2 compliance"],
@@ -226,6 +233,8 @@ export default function SinglePage() {
             <h3 className="text-sm font-medium mb-1.5 text-[#4dd4d4]">Analytics &amp; insights</h3>
             <p className="text-sm text-white/60 leading-relaxed">Real-time dashboards tracking FRT, AHT, customer journey maps, and AI-powered analytics that predict at-risk customers before they churn.</p>
           </div>
+          </div>
+          <img src={imgScalability} alt="Scalability" className="w-full object-cover max-h-72" />
         </section>
 
         {/* ── Section 8: Governance ── */}
