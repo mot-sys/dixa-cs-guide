@@ -1,6 +1,5 @@
 import { DixaLogo } from "../components/DixaLogo";
 import { AlertTriangle, CheckCircle2, TrendingUp } from "lucide-react";
-import imgHero from "@/assets/img-hero.png";
 import imgVendor from "@/assets/img-vendor.png";
 import imgAiChat from "@/assets/img-ai-chat.png";
 
@@ -15,21 +14,16 @@ export default function SinglePage() {
       <div className="max-w-5xl mx-auto px-10 py-16 space-y-10">
 
         {/* Hero */}
-        <section className="pb-6 grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
-              Guide for CS Leaders • 2026
-            </div>
-            <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
-              CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
-            </h1>
-            <p className="text-lg text-white/60 max-w-2xl">
-              The defining question of 2026: How do you choose the right CX platform in the AI era?
-            </p>
+        <section className="pb-6">
+          <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
+            Guide for CS Leaders • 2026
           </div>
-          <div>
-            <img src={imgHero} alt="Dixa CX Platform" className="rounded-2xl w-full object-cover shadow-2xl" />
-          </div>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
+            CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
+          </h1>
+          <p className="text-lg text-white/60 max-w-2xl">
+            The defining question of 2026: How do you choose the right CX platform in the AI era?
+          </p>
         </section>
 
         {/* ── Section 1: AI Platform ── */}
