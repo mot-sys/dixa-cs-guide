@@ -1,5 +1,8 @@
 import { DixaLogo } from "../components/DixaLogo";
 import { AlertTriangle, CheckCircle2, TrendingUp } from "lucide-react";
+import imgHero from "@/assets/img-hero.png";
+import imgVendor from "@/assets/img-vendor.png";
+import imgAiChat from "@/assets/img-ai-chat.png";
 
 export default function SinglePage() {
   return (
@@ -12,16 +15,21 @@ export default function SinglePage() {
       <div className="max-w-5xl mx-auto px-10 py-16 space-y-10">
 
         {/* Hero */}
-        <section className="pb-6">
-          <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
-            Guide for CS Leaders • 2026
+        <section className="pb-6 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div className="inline-block px-4 py-1.5 bg-white/10 rounded-full text-sm mb-5">
+              Guide for CS Leaders • 2026
+            </div>
+            <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
+              CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
+            </h1>
+            <p className="text-lg text-white/60 max-w-2xl">
+              The defining question of 2026: How do you choose the right CX platform in the AI era?
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight">
-            CX Platform <span className="text-[#4dd4d4]">Evaluation Guide</span>
-          </h1>
-          <p className="text-lg text-white/60 max-w-2xl">
-            The defining question of 2026: How do you choose the right CX platform in the AI era?
-          </p>
+          <div>
+            <img src={imgHero} alt="Dixa CX Platform" className="rounded-2xl w-full object-cover shadow-2xl" />
+          </div>
         </section>
 
         {/* ── Section 1: AI Platform ── */}
@@ -51,7 +59,9 @@ export default function SinglePage() {
         </section>
 
         {/* ── Section 2: Digital Sovereignty ── */}
-        <section className="bg-[#1f1f1f] rounded-2xl p-8">
+        <section className="bg-[#1f1f1f] rounded-2xl overflow-hidden">
+          <img src={imgVendor} alt="Vendor Lock-in" className="w-full object-cover max-h-64" />
+          <div className="p-8">
           <div className="flex items-start gap-4 mb-6">
             <span className="text-3xl">🔐</span>
             <div>
@@ -77,6 +87,7 @@ export default function SinglePage() {
                 </div>
               </div>
             ))}
+          </div>
           </div>
         </section>
 
@@ -107,7 +118,9 @@ export default function SinglePage() {
         </section>
 
         {/* ── Section 4: Human + AI ── */}
-        <section className="bg-[#1f1f1f] rounded-2xl p-8">
+        <section className="bg-[#1f1f1f] rounded-2xl overflow-hidden">
+          <div className="grid md:grid-cols-2">
+            <div className="p-8">
           <div className="flex items-start gap-4 mb-6">
             <span className="text-3xl">🤝</span>
             <div>
@@ -117,7 +130,7 @@ export default function SinglePage() {
               </p>
             </div>
           </div>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid gap-4">
             {[
               ["AI Copilot capabilities", "Handles repetitive tasks so agents can focus on complex problems"],
               ["Escalation paths", "Clear rules for when AI hands over to humans"],
@@ -128,6 +141,9 @@ export default function SinglePage() {
                 <p className="text-sm text-white/50 leading-relaxed">{desc}</p>
               </div>
             ))}
+          </div>
+            </div>
+            <img src={imgAiChat} alt="AI Chat Interface" className="w-full h-full object-cover min-h-64" />
           </div>
         </section>
 
