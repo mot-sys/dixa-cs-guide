@@ -8,7 +8,7 @@ import imgHeroBg from "@/assets/img-hero-bg.png";
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="text-center p-5">
-      <div className="text-3xl font-bold text-[#4dd4d4] mb-1">{value}</div>
+      <div className="text-3xl font-bold text-[#5644D8] mb-1">{value}</div>
       <div className="text-xs text-white/50 leading-snug max-w-[120px] mx-auto">{label}</div>
     </div>
   );
@@ -39,7 +39,10 @@ export default function SinglePage() {
           <a href="#roi" className="hover:text-white transition-colors">ROI</a>
           <a href="#framework" className="hover:text-white transition-colors">Framework</a>
           <a href="#redflags" className="hover:text-white transition-colors">Red Flags</a>
-          <a href="#contact" className="ml-2 px-4 py-1.5 bg-[#4dd4d4] text-[#2a2a2a] rounded-full font-semibold hover:bg-[#3dbdbd] transition-colors">
+          <a
+            href="https://www.dixa.com/demo?utm_source=intent-signal&utm_medium=pdf-buyer-guide"
+            className="ml-2 px-4 py-1.5 bg-[#5644D8] text-white rounded-full font-semibold hover:bg-[#4535c7] transition-colors"
+          >
             Talk to Dixa
           </a>
         </nav>
@@ -52,22 +55,25 @@ export default function SinglePage() {
           className="relative rounded-2xl overflow-hidden pt-16 pb-14 px-10"
           style={{ backgroundImage: `url(${imgHeroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1f3a3a]/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/80 via-[#2a2a2a]/70 to-[#1c1840]/60" />
           <div className="relative z-10 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#4dd4d4]/15 border border-[#4dd4d4]/30 rounded-full text-sm text-[#4dd4d4] mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#5644D8]/15 border border-[#5644D8]/30 rounded-full text-sm text-[#a394f0] mb-6">
               <span>Enterprise Buyer Guide 2026</span>
-              <span className="w-1 h-1 rounded-full bg-[#4dd4d4]" />
+              <span className="w-1 h-1 rounded-full bg-[#5644D8]" />
               <span>Based on Gartner, Forrester & IDC Research</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
-              Choose the Right CX Platform <span className="text-[#4dd4d4]">Before It Costs You</span>
+              Choose the Right CX Platform <span className="text-[#a394f0]">Before It Costs You</span>
             </h1>
             <p className="text-lg text-white/70 mb-8 leading-relaxed">
               Gartner predicts <strong className="text-white">40%+ of agentic AI projects will be canceled by end of 2027</strong> due to cost overruns and unclear value. This guide gives you the rigorous framework to be in the winning 60%.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#framework" className="inline-flex items-center gap-2 px-6 py-3 bg-[#4dd4d4] text-[#2a2a2a] rounded-full font-semibold hover:bg-[#3dbdbd] transition-colors">
-                See the Evaluation Framework <ArrowRight className="size-4" />
+              <a
+                href="https://www.dixa.com/demo?utm_source=intent-signal&utm_medium=pdf-buyer-guide"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#5644D8] text-white rounded-full font-semibold hover:bg-[#4535c7] transition-colors"
+              >
+                Talk to Dixa <ArrowRight className="size-4" />
               </a>
               <a href="#roi" className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/20 rounded-full hover:bg-white/15 transition-colors text-sm">
                 View ROI Benchmarks
@@ -121,7 +127,7 @@ export default function SinglePage() {
               },
             ].map(({ num, title, body }) => (
               <div key={num} className="flex gap-5 p-5 bg-[#2a2a2a] rounded-xl group hover:bg-[#303030] transition-colors">
-                <div className="text-2xl font-bold text-[#4dd4d4]/30 flex-shrink-0 w-8">{num}</div>
+                <div className="text-2xl font-bold text-[#5644D8]/40 flex-shrink-0 w-8">{num}</div>
                 <div>
                   <h3 className="font-semibold mb-1.5">{title}</h3>
                   <p className="text-sm text-white/55 leading-relaxed">{body}</p>
@@ -159,15 +165,15 @@ export default function SinglePage() {
               <div key={label as string} className="flex items-start gap-4 p-4 bg-[#2a2a2a] rounded-xl">
                 <span className="text-xl">{icon as string}</span>
                 <div>
-                  <div className="font-semibold text-[#4dd4d4] mb-0.5">{value as string}</div>
+                  <div className="font-semibold text-[#a394f0] mb-0.5">{value as string}</div>
                   <div className="text-xs text-white/55">{label as string}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-5 p-4 bg-[#4dd4d4]/10 border border-[#4dd4d4]/20 rounded-xl text-sm text-white/70 leading-relaxed">
-            <strong className="text-[#4dd4d4]">Aberdeen Research:</strong> Firms with smart self-service achieve 2.2× greater decrease in customer effort, 39% greater YoY CSAT increase, and <strong className="text-white">9.3% annual revenue growth</strong> vs. 4.3% for peers.
+          <div className="mt-5 p-4 bg-[#5644D8]/10 border border-[#5644D8]/20 rounded-xl text-sm text-white/70 leading-relaxed">
+            <strong className="text-[#a394f0]">Aberdeen Research:</strong> Firms with smart self-service achieve 2.2× greater decrease in customer effort, 39% greater YoY CSAT increase, and <strong className="text-white">9.3% annual revenue growth</strong> vs. 4.3% for peers.
           </div>
         </section>
 
@@ -188,7 +194,7 @@ export default function SinglePage() {
                   ["Human preference", "85% of consumers still prefer human interaction in complex situations — hybrid design wins"],
                 ].map(([label, text]) => (
                   <div key={label as string} className="flex gap-3 text-sm">
-                    <CheckCircle2 className="size-4 text-[#4dd4d4] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="size-4 text-[#5644D8] flex-shrink-0 mt-0.5" />
                     <div><span className="text-white/40">{label as string}: </span><span className="text-white/70">{text as string}</span></div>
                   </div>
                 ))}
@@ -203,7 +209,7 @@ export default function SinglePage() {
                     "Show real customer P&L impact, not just pilot results.",
                   ].map((q) => (
                     <li key={q} className="flex gap-2 text-xs text-white/60">
-                      <span className="text-[#4dd4d4]">→</span>
+                      <span className="text-[#5644D8]">→</span>
                       <span>{q}</span>
                     </li>
                   ))}
@@ -215,7 +221,7 @@ export default function SinglePage() {
         </section>
 
         {/* ══════════════ 5-DIMENSION FRAMEWORK ══════════════ */}
-        <section id="framework" className="border border-[#4dd4d4]/30 bg-[#4dd4d4]/5 rounded-2xl p-8">
+        <section id="framework" className="border border-[#5644D8]/30 bg-[#5644D8]/5 rounded-2xl p-8">
           <SectionHead
             icon="🔬"
             title="Five-Dimension Evaluation Framework"
@@ -224,27 +230,27 @@ export default function SinglePage() {
           <div className="space-y-4">
             {[
               {
-                icon: <Zap className="size-5 text-[#4dd4d4]" />,
+                icon: <Zap className="size-5 text-[#5644D8]" />,
                 dim: "Architecture & Modularity",
                 questions: ["Is it MACH-compliant (Microservices, API-first, Cloud-native, Headless)?", "Can you swap components without full platform migration?", "What's the average CCaaS deployment time? (Benchmark: 29 days cloud-native; 3–6 months complex)"],
               },
               {
-                icon: <TrendingUp className="size-5 text-[#4dd4d4]" />,
+                icon: <TrendingUp className="size-5 text-[#5644D8]" />,
                 dim: "Agentic Capabilities",
                 questions: ["Does AI genuinely plan, act, and adapt — or just route?", "What's the production deflection rate? (Benchmark: 45%+ in retail/travel)", "How do you prevent 'shadow AI' and configuration sprawl?"],
               },
               {
-                icon: <Users className="size-5 text-[#4dd4d4]" />,
+                icon: <Users className="size-5 text-[#5644D8]" />,
                 dim: "Human-in-the-Loop Design",
                 questions: ["Are escalation paths configurable and auditable?", "Can agents override AI decisions in real time?", "How does the platform support agent wellbeing and reduce burnout?"],
               },
               {
-                icon: <ShieldCheck className="size-5 text-[#4dd4d4]" />,
+                icon: <ShieldCheck className="size-5 text-[#5644D8]" />,
                 dim: "Governance & Trust",
                 questions: ["Is EU AI Act compliance embedded — not bolted on?", "Do they hold SOC 2 Type II, ISO 27001, and PCI DSS v4.0?", "Can you verify data residency and AI model jurisdiction?"],
               },
               {
-                icon: <CheckCircle2 className="size-5 text-[#4dd4d4]" />,
+                icon: <CheckCircle2 className="size-5 text-[#5644D8]" />,
                 dim: "Operational Proof",
                 questions: ["Can they demonstrate platform uptime >99.99%?", "Do they have documented case studies with P&L impact from companies like yours?", "What is their track record in your specific industry vertical?"],
               },
@@ -257,7 +263,7 @@ export default function SinglePage() {
                 <ul className="space-y-1.5">
                   {questions.map((q) => (
                     <li key={q} className="flex gap-2 text-sm text-white/60">
-                      <span className="text-[#4dd4d4] flex-shrink-0">›</span>
+                      <span className="text-[#5644D8] flex-shrink-0">›</span>
                       <span>{q}</span>
                     </li>
                   ))}
@@ -275,11 +281,11 @@ export default function SinglePage() {
             subtitle="61% of enterprise tech stacks will be MACH-based by 2026. The other 39% will spend 2026 regretting legacy lock-in."
           />
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="p-5 bg-[#2a2a2a] rounded-xl border border-[#4dd4d4]/20">
-              <h3 className="text-sm font-semibold text-[#4dd4d4] mb-3">✓ Composable (MACH)</h3>
+            <div className="p-5 bg-[#2a2a2a] rounded-xl border border-[#5644D8]/20">
+              <h3 className="text-sm font-semibold text-[#a394f0] mb-3">✓ Composable (MACH)</h3>
               <ul className="space-y-2 text-sm text-white/60">
                 {["Swap components without full migration", "API-first — integrates with your CRM/ERP stack", "Deploy new capabilities in days, not months", "Data portability — export anytime in open formats", "Multi-cloud strategy reduces single-vendor risk"].map(i => (
-                  <li key={i} className="flex gap-2"><span className="text-[#4dd4d4]">+</span>{i}</li>
+                  <li key={i} className="flex gap-2"><span className="text-[#5644D8]">+</span>{i}</li>
                 ))}
               </ul>
             </div>
@@ -316,7 +322,7 @@ export default function SinglePage() {
               <div key={value as string} className="flex items-start gap-4 p-4 bg-[#2a2a2a] rounded-xl">
                 <span className="text-xl">{icon as string}</span>
                 <div>
-                  <div className="font-semibold text-[#4dd4d4] mb-0.5">{value as string}</div>
+                  <div className="font-semibold text-[#a394f0] mb-0.5">{value as string}</div>
                   <div className="text-xs text-white/55 leading-snug">{desc as string}</div>
                 </div>
               </div>
@@ -341,7 +347,7 @@ export default function SinglePage() {
               ["Role-based access (RBAC)", "Immutable audit logs + SIEM integration for full traceability"],
             ].map(([title, desc]) => (
               <div key={title} className="flex items-start gap-3 p-4 bg-[#2a2a2a] rounded-xl">
-                <div className="w-0.5 h-10 rounded-full bg-[#4dd4d4] flex-shrink-0 mt-0.5" />
+                <div className="w-0.5 h-10 rounded-full bg-[#5644D8] flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-sm font-semibold mb-0.5">{title}</h3>
                   <p className="text-xs text-white/50">{desc}</p>
@@ -381,7 +387,7 @@ export default function SinglePage() {
               ))}
             </div>
             <div className="bg-[#2a2a2a] p-5 rounded-xl">
-              <h3 className="text-sm font-semibold mb-1.5 text-[#4dd4d4]">Analytics & real-time insights</h3>
+              <h3 className="text-sm font-semibold mb-1.5 text-[#a394f0]">Analytics & real-time insights</h3>
               <p className="text-sm text-white/60 leading-relaxed">Real-time dashboards tracking FRT, AHT, and full customer journey maps. AI-powered analytics that identify at-risk customers before churn — not after. Governance dashboards for AI model performance and compliance posture.</p>
             </div>
           </div>
@@ -430,12 +436,12 @@ export default function SinglePage() {
               { phase: "Phase 4", weeks: "Wks 11–14", title: "Decision & Contract", items: ["Negotiate SLAs tied to your benchmarks", "Confirm exit rights and data portability", "Define implementation milestones"] },
             ].map(({ phase, weeks, title, items }) => (
               <div key={phase} className="bg-[#2a2a2a] rounded-xl p-5">
-                <div className="text-xs text-[#4dd4d4] font-semibold mb-1">{phase} · {weeks}</div>
+                <div className="text-xs text-[#a394f0] font-semibold mb-1">{phase} · {weeks}</div>
                 <h3 className="font-semibold mb-3">{title}</h3>
                 <ul className="space-y-1.5">
                   {items.map(i => (
                     <li key={i} className="flex gap-2 text-xs text-white/55">
-                      <span className="text-[#4dd4d4]">›</span>
+                      <span className="text-[#5644D8]">›</span>
                       <span>{i}</span>
                     </li>
                   ))}
@@ -446,22 +452,19 @@ export default function SinglePage() {
         </section>
 
         {/* ══════════════ CTA ══════════════ */}
-        <section id="contact" className="relative text-center py-16 px-8 bg-gradient-to-br from-[#1f3a3a] to-[#1f1f1f] rounded-2xl overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOCIgc3Ryb2tlPSIjNGRkNGQ0IiBzdHJva2Utb3BhY2l0eT0iLjA1Ii8+PC9nPjwvc3ZnPg==')] opacity-30" />
+        <section id="contact" className="relative text-center py-16 px-8 bg-gradient-to-br from-[#1c1840] to-[#1f1f1f] rounded-2xl overflow-hidden">
+          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 30% 50%, #5644D8 0%, transparent 60%), radial-gradient(circle at 80% 20%, #a394f0 0%, transparent 50%)" }} />
           <div className="relative z-10">
-            <div className="inline-block px-4 py-1.5 bg-[#4dd4d4]/15 border border-[#4dd4d4]/30 rounded-full text-sm text-[#4dd4d4] mb-5">
-              Dixa — Built for what comes next
-            </div>
-            <h2 className="text-3xl font-bold mb-4">Ready to run the framework?</h2>
+            <h2 className="text-3xl font-bold mb-4">The Agentic CS Platform Behind Exceptional Ecommerce Brands</h2>
             <p className="text-white/60 max-w-xl mx-auto mb-8 leading-relaxed">
-              Dixa is purpose-built to score well across all five evaluation dimensions. Talk to our team — we'll walk you through a structured evaluation against your specific requirements, no fluff.
+              Resolve issues faster with agentic AI and intelligent handovers. Built for ecommerce brands where customer experience is the bread and butter.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <a href="https://dixa.com" className="inline-flex items-center gap-2 px-8 py-3 bg-[#4dd4d4] text-[#2a2a2a] rounded-full font-bold hover:bg-[#3dbdbd] transition-colors">
+              <a
+                href="https://www.dixa.com/demo?utm_source=intent-signal&utm_medium=pdf-buyer-guide"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-[#5644D8] text-white rounded-full font-bold hover:bg-[#4535c7] transition-colors"
+              >
                 Talk to Dixa <ArrowRight className="size-4" />
-              </a>
-              <a href="https://dixa.com/resources" className="inline-flex items-center gap-2 px-8 py-3 bg-white/10 border border-white/20 rounded-full hover:bg-white/15 transition-colors text-sm">
-                Download Full Guide
               </a>
             </div>
             <p className="text-white/30 text-xs mt-6">Sources: Gartner Magic Quadrant CCaaS 2025, Forrester Wave CCaaS Q2 2025, Metrigy CX Optimization Study 2025–26, IDC, Aberdeen, McKinsey</p>
